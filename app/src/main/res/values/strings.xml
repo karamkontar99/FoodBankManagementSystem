@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FoodBank</string>
+    <string name="action_settings">Settings</string>
+    <string name="volunteer">Volunteer</string>
+    <string name="manager">Manager</string>
+    <string name="donor">Donor</string>
+    <string name="title_activity_donor">DonorActivity</string>
+</resources>

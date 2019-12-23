@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="securityQues">
+        <item>What\'s the name of your first pet?</item>
+        <item>Who\'s your best friend in fifth grade?</item>
+        <item>Where does your grandma live?</item>
+        <item>How old were you when you knew that santa didn\'t exist?</item>
+    </string-array>
+</resources>

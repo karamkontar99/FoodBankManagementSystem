@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mobile.foodbank">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/bg1" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+
+        <activity
+            android:name=".activities.DonorActivity"
+            android:label="@string/title_activity_donor"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".activities.ReceiveDonations" />
+        <activity android:name=".activities.VolunteerActivity" />
+        <activity android:name=".activities.ListItems" />
+        <activity android:name=".UpdateProfile" />
+        <activity android:name=".activities.PasswordResetActivity" />
+        <activity android:name=".activities.ListUsers" />
+        <activity android:name=".activities.ListDonations" />
+        <activity android:name=".activities.AddItem" />
+        <activity android:name=".activities.ManagerActivity" />
+        <activity android:name=".activities.LoginActivity" />
+        <activity android:name=".activities.SignUpActivity" />
+        <activity android:name=".activities.ApproveDonations" />
+        <activity android:name=".activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service
+            android:name=".fcm.FirebaseMessaging"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
